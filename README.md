@@ -8,7 +8,7 @@ no framework hiding the mechanics.
 > Company "Northwind Robotics" and its handbook are fictional. Swap in your own PDF and
 > it becomes your assistant.
 
-**Live demo:** _(Railway URL — see repo description)_
+**Live demo:** https://policy-copilot-production.up.railway.app
 
 ![Policy Copilot chat UI](docs/screenshot.png)
 
