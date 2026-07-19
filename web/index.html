@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Policy Copilot · Northwind Robotics</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📘</text></svg>" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">📘</span>
+      <div>
+        <div class="brand-name">Policy Copilot</div>
+        <div class="brand-sub">Northwind Robotics · Employee Handbook</div>
+      </div>
+    </div>
+    <div class="status" id="status"><span class="dot"></span><span id="status-text">connecting…</span></div>
+  </header>
+
+  <main id="thread" class="thread">
+    <div class="welcome" id="welcome">
+      <div class="welcome-logo">📘</div>
+      <h1>Ask about company policy</h1>
+      <p>I answer only from the official Northwind Robotics handbook — with a citation for every answer.</p>
+      <div class="chips" id="suggestions">
+        <button class="chip">How many vacation days do I get?</button>
+        <button class="chip">What's the remote work policy?</button>
+        <button class="chip">How do I expense a work laptop?</button>
+        <button class="chip">What's the parental leave policy?</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="composer-wrap">
+    <form class="composer" id="composer">
+      <textarea id="input" rows="1" placeholder="Ask about vacation, remote work, expenses, security…" autocomplete="off"></textarea>
+      <button type="submit" id="send" aria-label="Send">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M3.4 20.4l17.45-7.48a1 1 0 000-1.84L3.4 3.6a.993.993 0 00-1.39.91L2 9.12c0 .5.37.93.87.99L17 12 2.87 13.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91z"/></svg>
+      </button>
+    </form>
+    <div class="disclaimer">Grounded in the handbook PDF via RAG · answers cite their source</div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
